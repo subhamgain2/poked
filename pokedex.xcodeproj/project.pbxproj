@@ -21,6 +21,7 @@
 		0FC5F8671E453F3A00239F2C /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC5F8661E453F3A00239F2C /* csv.swift */; };
 		0FC5F86D1E454DB900239F2C /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FC5F86C1E454DB900239F2C /* pokemon.ttf */; };
 		0FC5F86F1E45504500239F2C /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0FC5F86E1E45504500239F2C /* music.mp3 */; };
+		0FC5F8711E455B2A00239F2C /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC5F8701E455B2A00239F2C /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		0FC5F8661E453F3A00239F2C /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		0FC5F86C1E454DB900239F2C /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
 		0FC5F86E1E45504500239F2C /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		0FC5F8701E455B2A00239F2C /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				0FC5F82F1E451A4F00239F2C /* ViewController.swift */,
+				0FC5F8701E455B2A00239F2C /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				0FC5F8361E451A4F00239F2C /* pokedex.xcdatamodeld in Sources */,
 				0FC5F8621E4528CB00239F2C /* Pokemon.swift in Sources */,
 				0FC5F8301E451A4F00239F2C /* ViewController.swift in Sources */,
+				0FC5F8711E455B2A00239F2C /* PokemonDetailVC.swift in Sources */,
 				0FC5F82E1E451A4F00239F2C /* AppDelegate.swift in Sources */,
 				0FC5F8651E45317600239F2C /* PokeCell.swift in Sources */,
 			);

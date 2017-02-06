@@ -405,7 +405,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nY0-eI-5id">
-                                <rect key="frame" x="0.0" y="57" width="375" height="610"/>
+                                <rect key="frame" x="0.0" y="55" width="375" height="612"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtd-oo-qxe">
                                         <rect key="frame" x="70" y="208" width="234" height="70"/>
@@ -432,7 +432,7 @@
                             <constraint firstItem="fDN-nX-z0L" firstAttribute="leading" secondItem="m8G-L1-6xZ" secondAttribute="leadingMargin" id="8z7-T8-Fsr"/>
                             <constraint firstItem="nY0-eI-5id" firstAttribute="leading" secondItem="m8G-L1-6xZ" secondAttribute="leading" id="Csv-00-ZGO"/>
                             <constraint firstItem="eLq-X5-E6u" firstAttribute="top" secondItem="koU-Xp-Pgr" secondAttribute="bottom" constant="20" id="Ggn-Ap-mrY"/>
-                            <constraint firstItem="nY0-eI-5id" firstAttribute="top" secondItem="IuS-LF-hvD" secondAttribute="bottom" constant="2" id="JoP-19-794"/>
+                            <constraint firstItem="nY0-eI-5id" firstAttribute="top" secondItem="IuS-LF-hvD" secondAttribute="bottom" id="JoP-19-794"/>
                             <constraint firstItem="IuS-LF-hvD" firstAttribute="leading" secondItem="m8G-L1-6xZ" secondAttribute="leading" id="MJo-lR-aQx"/>
                             <constraint firstItem="eLq-X5-E6u" firstAttribute="top" secondItem="WPx-tM-fKw" secondAttribute="bottom" constant="8" id="QPG-YO-dHv"/>
                             <constraint firstItem="WPx-tM-fKw" firstAttribute="top" secondItem="IuS-LF-hvD" secondAttribute="bottom" constant="69" id="SCA-G7-qf4"/>

@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Alamofire
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
     
@@ -82,7 +83,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         var poke: Pokemon!
         
         if inSearchMode {
-            poke = filteredPokemon[indexPath.count]
+            poke = filteredPokemon[indexPath.row]
         } else {
             poke = pokemon[indexPath.row]
         }

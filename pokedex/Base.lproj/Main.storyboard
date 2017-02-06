@@ -214,6 +214,9 @@
                                             <segment title="Moves"/>
                                         </segments>
                                         <color key="tintColor" red="1" green="0.24483762249999999" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="segmentPressed:" destination="zr3-wJ-2iM" eventType="valueChanged" id="KSl-4c-p5j"/>
+                                        </connections>
                                     </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="HoA-MW-EB2">
                                         <rect key="frame" x="0.0" y="49" width="343" height="120"/>
@@ -381,6 +384,26 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPx-tM-fKw">
+                                <rect key="frame" x="8" y="124" width="359" height="535"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moves are coming soon..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2N-co-wG0">
+                                        <rect key="frame" x="49" y="217" width="261" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="261" id="4uL-wM-Xs2"/>
+                                            <constraint firstAttribute="height" constant="46" id="GlE-co-Ogd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.24483762249999999" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="A2N-co-wG0" firstAttribute="centerX" secondItem="WPx-tM-fKw" secondAttribute="centerX" id="Vca-Us-wT6"/>
+                                    <constraint firstItem="A2N-co-wG0" firstAttribute="top" secondItem="WPx-tM-fKw" secondAttribute="top" constant="217" id="fJz-GN-kKg"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nY0-eI-5id">
                                 <rect key="frame" x="0.0" y="57" width="375" height="610"/>
                                 <subviews>
@@ -390,7 +413,7 @@
                                             <constraint firstAttribute="width" constant="234" id="er7-mE-Iab"/>
                                             <constraint firstAttribute="height" constant="70" id="uzk-oP-6NI"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.24483762249999999" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -411,12 +434,16 @@
                             <constraint firstItem="eLq-X5-E6u" firstAttribute="top" secondItem="koU-Xp-Pgr" secondAttribute="bottom" constant="20" id="Ggn-Ap-mrY"/>
                             <constraint firstItem="nY0-eI-5id" firstAttribute="top" secondItem="IuS-LF-hvD" secondAttribute="bottom" constant="2" id="JoP-19-794"/>
                             <constraint firstItem="IuS-LF-hvD" firstAttribute="leading" secondItem="m8G-L1-6xZ" secondAttribute="leading" id="MJo-lR-aQx"/>
+                            <constraint firstItem="eLq-X5-E6u" firstAttribute="top" secondItem="WPx-tM-fKw" secondAttribute="bottom" constant="8" id="QPG-YO-dHv"/>
+                            <constraint firstItem="WPx-tM-fKw" firstAttribute="top" secondItem="IuS-LF-hvD" secondAttribute="bottom" constant="69" id="SCA-G7-qf4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fDN-nX-z0L" secondAttribute="trailing" id="SiN-BG-kcI"/>
                             <constraint firstItem="koU-Xp-Pgr" firstAttribute="top" secondItem="S1t-kz-rXp" secondAttribute="bottom" constant="30" id="Typ-8N-LFc"/>
                             <constraint firstItem="eLq-X5-E6u" firstAttribute="top" secondItem="nY0-eI-5id" secondAttribute="bottom" id="X85-qs-cc1"/>
                             <constraint firstItem="S1t-kz-rXp" firstAttribute="leading" secondItem="m8G-L1-6xZ" secondAttribute="leading" id="ZqO-Qp-kVc"/>
                             <constraint firstAttribute="trailing" secondItem="nY0-eI-5id" secondAttribute="trailing" id="fzW-u7-fmK"/>
+                            <constraint firstItem="WPx-tM-fKw" firstAttribute="leading" secondItem="m8G-L1-6xZ" secondAttribute="leading" constant="8" id="h9g-1R-DvI"/>
                             <constraint firstItem="S1t-kz-rXp" firstAttribute="top" secondItem="fDN-nX-z0L" secondAttribute="bottom" constant="20" id="heT-KH-k8N"/>
+                            <constraint firstAttribute="trailing" secondItem="WPx-tM-fKw" secondAttribute="trailing" constant="8" id="jnK-uA-Tmy"/>
                             <constraint firstAttribute="trailing" secondItem="IuS-LF-hvD" secondAttribute="trailing" id="lcf-vz-vCb"/>
                             <constraint firstAttribute="trailing" secondItem="S1t-kz-rXp" secondAttribute="trailing" id="nZP-eE-PbF"/>
                             <constraint firstItem="koU-Xp-Pgr" firstAttribute="centerX" secondItem="m8G-L1-6xZ" secondAttribute="centerX" id="ttB-gl-5Uk"/>
@@ -432,9 +459,11 @@
                         <outlet property="heightLbl" destination="DTK-NU-IL5" id="32M-y9-iAT"/>
                         <outlet property="loadingLbl" destination="jtd-oo-qxe" id="HBK-PE-LNZ"/>
                         <outlet property="mainImg" destination="xAC-zl-4uJ" id="6Pb-rd-cWc"/>
+                        <outlet property="moovView" destination="WPx-tM-fKw" id="NWS-Zb-0aB"/>
                         <outlet property="nameLbl" destination="Pb1-AH-bIc" id="iHR-0v-m5e"/>
                         <outlet property="nextEvoImg" destination="isd-TU-hm8" id="Ldg-mq-CJi"/>
                         <outlet property="pokedexLbl" destination="9wQ-Xb-ryx" id="fWA-nv-zCe"/>
+                        <outlet property="segment" destination="se0-ph-9ai" id="HVx-Qs-mfs"/>
                         <outlet property="typeLbl" destination="qCx-tv-DVj" id="79N-LZ-sef"/>
                         <outlet property="upperView" destination="nY0-eI-5id" id="I3w-fr-Nyf"/>
                         <outlet property="weightLbl" destination="wpj-NI-rRe" id="NOS-2D-iIF"/>

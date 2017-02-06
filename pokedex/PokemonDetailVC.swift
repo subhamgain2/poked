@@ -10,6 +10,8 @@ import UIKit
 
 class PokemonDetailVC: UIViewController {
     
+    @IBOutlet weak var segment: UISegmentedControl!
+    @IBOutlet weak var moovView: UIView!
     @IBOutlet weak var loadingLbl: UILabel!
     @IBOutlet weak var upperView: UIView!
     @IBOutlet weak var activity: UIActivityIndicatorView!
@@ -32,9 +34,18 @@ class PokemonDetailVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.upperView.alpha = 0.5
-        self.loadingLbl.alpha = 1
+        self.moovView.isHidden = true
+        self.upperView.backgroundColor = UIColor.clear
+        self.moovView.backgroundColor = UIColor.clear
+        let blurEffect = UIBlurEffect(style: .light)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.moovView.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        let blurEffectView2 = UIVisualEffectView(effect: blurEffect)
+        blurEffectView2.frame = self.upperView.bounds
+        blurEffectView2.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.moovView.insertSubview(blurEffectView, at: 0)
+        self.upperView.insertSubview(blurEffectView2, at: 0)
         self.activity.startAnimating()
         self.activity.hidesWhenStopped = true
 
@@ -83,6 +94,16 @@ class PokemonDetailVC: UIViewController {
     
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    @IBAction func segmentPressed(_ sender: Any) {
+        switch segment.selectedSegmentIndex {
+        case 0:
+            self.moovView.isHidden = true
+        case 1:
+            self.moovView.isHidden = false
+        default:
+            break
+        }
     }
 
     /*
